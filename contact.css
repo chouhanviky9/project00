@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+header{
+    height: 90px;
+    /* background-color: rosybrown; */
+}
+.headerDiv{
+    display: flex;
+    padding: 10px;
+}
+.logoDiv{
+    margin: 15px;
+}
+.logoDiv img{
+    width: 80px;
+    height: 40px;
+}
+.nav{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.navLinks{
+padding: 10px 2px;
+margin: 10px 5px;
+
+}
+.navLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.navLinks a:hover{
+    color: palevioletred;
+    text-decoration: none;
+}
+
+.searchBar{
+padding: 5px 0;
+margin: 10px 20px;
+}
+.bar{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    top: 1px;
+    left: 4px;
+    
+
+}
+.searchButton{
+    width: 40px;
+    height: 30px;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.searchButton:hover{
+    background-color:rgb(170, 7, 61) ;
+    color: white;
+}
+.navIcons{
+    margin-left: 30px;
+}
+.navIcons button {
+    width: 50px;
+    height: 60px;
+    margin: 0 20px;
+}
+
+/* dropdown styles starts here */
+#drop-news{
+    border: 1px solid black;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    left: 460px;
+    display: ;
+}
+.drop-news a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.news a:hover #drop-news a{
+    background-color: lawngreen;
+}
+
+
+/* dropdown styles ends here */

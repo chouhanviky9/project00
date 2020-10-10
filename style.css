@@ -73,9 +73,26 @@ margin: 10px 20px;
     margin: 0 20px;
 }
 
+.togglebtn{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.togglebtn span{
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    border-radius: 5px;
+}
 .carouselMain{
-    height: 600px;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+ 
 }
 .carousel-item{
     width: 100%;
@@ -83,7 +100,7 @@ margin: 10px 20px;
 }
 .carousel-item img{
     width: 100%;
-    height: 680px;
+    height: auto;
 }
 .topProduct{
     
@@ -239,7 +256,6 @@ padding: 70px 150px;
 .grid-bg:hover{
     background-image: url(./Product-Images-02.png);
     background-size: cover;
-
 }
 .grid-item:hover{
     border: 1px solid   rgb(167, 70, 70);
@@ -316,33 +332,28 @@ padding: 70px 150px;
 
 
 
-//footer style starts here 
+/* footer style starts here  */
 
 
 footer{
     background-color: rgb(253,239,225);
     height:  536px;
     width: 100%;
-}
-
-footer{
-    background-color: rgb(253,239,225);
-    /* height:  536px;
-    width: 100%; */
     margin-top: 80px;
 }
 
 
 
 .footerMain{
-    display: flex;
-    justify-content: space-between;
-    width: 1080px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* justify-content: space-between; */
+    width: 80%;
     height: 125px;
     padding:10px 20px;
     border-radius: 10px;
     background-color: white;
-    margin-left: 135px;
+    margin-left: 10%;
     margin-bottom: 20px;
     position: relative;
     top: -55px;
@@ -367,13 +378,18 @@ footer{
 }
 
 .footerMiddle h2{
-    color: palevioletred;
-    margin-bottom: 20px;
+    color: palevioletred;  
 } 
+
+.footmiddleMain{
+    margin: 20px 0;
+   
+}
+
+
 .footerMiddle a{
     color: black;
     text-decoration: none;
-    
     font-size: 17px;
 }
 
@@ -389,4 +405,78 @@ footer{
     text-align: center;
     margin-top: 40px;
 }
-//footer style ends here
+/* //footer style ends here */
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .teaser{
+        margin:0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .bgCosmetic{
+        height: auto;
+    }
+    
+    footer{
+        background-color: rgb(253,239,225);
+        width: 100%;
+        margin-top: 80px;
+        height: auto;
+
+    }
+    .footerMain{
+        width: 100%;
+        margin: 80px 0;
+        grid-template-columns: auto auto ;
+        height: auto;
+    
+    }
+    .footerMiddle{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        
+    }
+    .showcase{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navIcons{
+        display: none;
+    }
+    .navLinks{
+        display: none;
+    }
+    .contentImg{
+        display: none;
+    }
+    .containerImg{
+        width: 100%;
+    }
+    .containerImg img{
+        width: 100%;
+        height: auto;
+    }
+    .togglebtn{
+        display: initial;
+        
+    }
+}
+
+/* @media(max-width:480px){
+
+} */
